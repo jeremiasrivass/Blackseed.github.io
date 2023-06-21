@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    
+<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="CSS/estilos.css">
+<link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md  navbar-dark">
+    <div class="container">
+      <a href="index.html"><img src="img/iconos/logo-icono.png" alt="Bootstrap" width="60" height="60"></a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link "  href="index.html">  <strong>Inicio</a></strong>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"> <strong>Productos</a></strong>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page"href="Contacto.html"> <strong>Contacto</a></strong>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html"> <strong>Quienes somos?</a></strong>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" > <strong>Preguntas frecuentes</a></strong>
+            </li>
+  
+       </ul>
+        
+      </div>
+    </div>
+  </nav>
+      
+      <header class="container py-5">
+        <div class="titular text-center py-3">
+            <h1 class="display-1">Nuestros productos</h1>
+            <h2>Disfruta de los mejores granos seleccionados de todo el mundo</h2>
+        </div>
+    </header>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Productos</h2>
+          <div id="productos" class="row   row-cols-md-2 row-cols-lg-3">
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h2>Mi pedido</h2>
+          <div id="smartcart">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </div>
+  
+  <footer class=" footer bg-dark text-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h5 class="mb-3">Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+            <li><a href="preguntas.html">Preguntas frecentes</a></li>
+            <li><a href="productos.html">Productos</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="mb-3">Contacto</h5>
+          <p class="mb-1"><i class="fa fa-phone mr-2"></i>+54 11 1234-5678</p>
+          <p class="mb-1"><i class="fa fa-envelope mr-2"></i>BlackSeedcoffeestore.com</p>
+          <p class="mb-1"><i class="fa fa-map-marker mr-2"></i>Canning 3989, Buenos Aires</p>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="mb-3">Seguinos</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a><i class="fa fa-facebook"></i><img src="img/iconos/telefono.png" height="30" alt=""></a></li>
+            <li class="list-inline-item"><i class="fa fa-twitter"></i><img src="img/iconos/Facebook.png" height="30" alt=""></a></li>
+            <li class="list-inline-item"><i class="fa fa-instagram"></i><img src="img/iconos/Instagram.png" height="30" alt=""></a></li>
+            <li class="list-inline-item"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid  py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-0">&copy; 2023 Rivas Jeremias - 2-b - Desarrollo/programacion.</p>
+          </div>
+          <div class="col-sm-6 text-right">
+            <p class="mb-0">Diseñado con HTML,CSS,JS,Bootstrap y Jquery <i class="fa fa-heart text-danger"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendors/jquery-3.7.0.min.js"></script>
+
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.min.js"></script>
+
+    <script src="JS/productos.js"></script>
+
+    <script src="JS/scripts.js"></script>
+
+    <script>
+$(document).ready(function() {
+ 
+  for( let i=0; i< productos.length;i++){
+    $('#productos').append(
+      '<div class="col">' + 
+      '<article class="card sc-product-item" style="width: 18rem;" >' + 
+    '<img data-name="product_image" src="img/productos/' + productos[i]['imagen'] + '" class="card-img-top" alt="...">' + 
+    '<div class="card-body">' + 
+      '<h3 data-name="product_name" class="card-title">'+ productos[i]['Nombre'] +'</h3>' + 
+
+      '<input name="product_price" value="' + productos[i].Precio + '" type="hidden">' +
+
+
+
+      ' <h5 class="card-text"> Precio: $' + productos[i]['Precio'] + '</h5>' + 
+      '<p data-name="product_desc" class="card-text">' + productos[i]['Descripcion'] + '</p>' + 
+      
+      '    <button class="sc-add-to-cart btn btn-success">Agregar al carrito</button>'+
+    '</div>' +
+  '</article>' +
+  '</div>'
+    );
+  }
+
+  $('#smartcart').smartCart({
+    cartItemTemplate: '<img class="img-responsive pull-left" src="{product_image}" /><h5 class="list-group-item-heading">{product_name}</h5><p class="list-group-item-text">{product_desc}</p>',
+    lang:{
+      cartTitle: "Mi Carrito",
+    checkout: 'Comprar',
+    clear: 'Limpiar',
+    subtotal: 'Subtotal:',
+    cartRemove:'×',
+    cartEmpty: '¡Elegí tus productos!'
+    }
+  });
+});
+
+    </script>
+</body>
+</html>
