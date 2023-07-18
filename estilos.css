@@ -1,0 +1,156 @@
+h2{
+    font-size: medium;
+    padding: 10px;
+    margin-left: -1000;
+}
+.beneficios{
+    padding-top: 100px;
+}
+.nuestrosProductos{
+    padding-top: 50px;
+}
+.Marcas{
+    margin-top: 100px;
+}
+
+    footer .mini {
+        height: 40px;
+      }
+      footer .mini {
+        height: 40px;
+      }
+      
+      .scrolling footer {
+        height: 300px;
+        overflow: hidden;
+      }
+      
+      .scrolling footer .maxi {
+        overflow: visible;
+      }
+      
+      footer {
+        background: #33333f;
+        font-size: 1.2em;
+      }
+      
+      .scrolling footer {
+        background: #66666f;
+      }
+      .redes li{
+        padding: 20px;  }
+        .maxi{
+            padding-left: 30%;
+        }
+        #body{
+            background-color: brown;
+        }
+.text-uppercase{
+    font-size: medium;
+    padding: 20px;
+}
+.list-unstyled{
+    font-size: small;
+}
+.mb-3 mb-md-0{
+    color: bisque;
+}
+footer{
+color: bisque;
+font-size: medium;
+background-color: #7f3e28;
+}
+body{
+    background-color: #f2e1c0;
+    
+    
+}
+.nav{
+  position: sticky;
+}
+.col-md-6 h1{
+color: #7f3e28;
+}
+.col-md-6 p{
+    color: #7f3e28;
+}
+.col-sm-4{
+  color: #f2e1c0;
+}
+.container-fluid{
+  background-color: #88847c;
+}
+.btn{
+  background-color: #ae6a54;
+}
+.btn strong{
+  color: #33260d;
+}
+.titular h2{
+  color: #7f3e28;
+}
+.boton{
+  background-color: #f2e1c0;
+}
+.beneficios h6{
+  color: #7f3e28;
+}
+.titular h1{
+  color: #7f3e28;
+}
+.titular p{
+  color: #7f3e28;
+}
+.mapa h3{
+  color: #7f3e28;
+}
+.mapa {
+  color: #7f3e28;
+}
+.navbar{
+  background-color: #7f3e28;
+
+}
+
+.navbar a{
+  color: #f2e1c0;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: auto;
+}
+.footer{
+  font-style: italic;
+}
+.nuestrosProductos h1{
+  color: #f2e1c0;
+  background-color: #7f3e28;
+  padding: 8px;
+}
+.nuestrosProductos p{
+  color: #7f3e28;
+  font-size:x-large;
+}
+.Marcas h1{
+  color: #f2e1c0;
+  background-color: #7f3e28;
+  padding: 8px;
+}
+.Marcas p{
+  color: #7f3e28;
+  font-size:x-large
+}
+.titular p{
+  color: #7f3e28;
+  font-size:x-large
+}
+.lista li a{
+  color: #f2e1c0;
+
+}
+.iconos li{
+  padding-right: 0%;
+}
+
+
